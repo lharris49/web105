@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+    <style>
+        body {
+            background-image: url('purple background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div {
+            min-height: 150px;
+            width: 80%;
+            border: 3px solid gold;
+            margin: 10px auto;
+            color: ivory;
+            background-color: rgba(0, 0, 0, .7);
+            overflow: auto;
+        }
+
+        img {
+            width: 30%;
+        }
+
+        h1 {
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Images</h1>
+    </div>
+    <div style="background-image: url('cherry blossoms.jpg');">
+        <h2>Background Image</h2>
+    </div>
+    <div>
+        <a href="https://www.mchenry.edu/"><img src="blonde girl.jpg" alt="blonde girl"></a>
+    </div>
+    <div>
+        <h1>No Float</h1>
+        <img src="otter love.jpg" alt="two otters">
+        <p>Here's what it will look like when there is no float to the image.</p>
+    </div>
+    <div>
+        <h1>Float Left</h1>
+        <img src="otter love.jpg" alt="two otters" style="float: left;">
+        <p>When the image is floated left, you will see the text to the right of the image</p>
+    </div>
+    <div>
+        <h1>Float Right</h1>
+        <img src="otter love.jpg" alt="two otters" style="float: right;">
+        <p>When the image is floated right, it is opposite and the text will appear to the left
+            of the image</p>
+    </div>
+    <div>
+        <h1>External Image Source</h1>
+        <img src="https://www.mchenry.edu/images/McHenryCountyCollegeLogo.png" alt="MCC">
+    </div>
+</body>
+
+</html>
