@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+            width: 95%;
+            margin: 20px auto;
+            border: 3px solid teal;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid teal;
+            padding: 5px;
+        }
+
+        th {
+            color: whitesmoke;
+            background-color: teal;
+        }
+
+        tr :hover {
+            background: turquoise;
+        }
+
+        td {
+            text-align: center;
+            min-height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Styling Tables</h1>
+            <nav id="top">
+                <a href="index.html">Table Basics</a>
+                <a href="styling-table.html">Styling Tables</a>
+                <a href="calender.html">Creating a Calender</a>
+            </nav>
+            <p>&nbsp;</p>
+            <h2>Styling Tables</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <th>8:00 am</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>9:00 am</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="4">GRA-100</td>
+                </tr>
+                <tr>
+                    <th>10:00 am</th>
+                    <td rowspan="2">HFE-250</td>
+                    <td></td>
+                    <td rowspan="2">HFE-250</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>11:00 am</th>
+                    <td></td>
+                    <td>Meet with Counselor</td>
+                </tr>
+                <tr>
+                    <th>12:00 pm</th>
+                    <td></td>
+                    <td>Lunch with Brooke</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>1:00 pm</th>
+                    <td></td>
+                    <td rowspan="2">Health Study Group</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>2:00 pm</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>3:00 pm</th>
+                    <td rowspan="2">CLM-100</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>4:00 pm</th>
+                    <td></td>
+                    <td></td>
+                    <td rowspan="3">WEB-105 Study</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>5:00 pm</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>6:00 pm</th>
+                    <td></td>
+                    <td>Physical Trainer - Sam</td>
+                    <td></td>
+                    <td rowspan="2">Date with Allison</td>
+                </tr>
+                <tr>
+                    <th>7:00 pm</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </header>
+    </div>
+</body>
+
+</html>
