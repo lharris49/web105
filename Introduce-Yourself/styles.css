@@ -1,0 +1,46 @@
+nav {
+            text-align: center;
+            line-height: 3;
+        }
+
+        nav a {
+            text-decoration: none;
+            background: sienna;
+            border: 3px solid sienna;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 10px 20px;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+
+        nav a:visited {
+            color: coral
+        }
+
+        nav a:hover {
+            background: whitesmoke;
+            color: sienna;
+        }
+body{
+    background-image: url(textile-bkg.jpg);
+    font-family: Arial, Helvetica, sans-serif
+}
+h1{
+    color: crimson;
+    text-align: center;
+}
+h2{
+    color: sienna;
+ }
+.container{
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 3px solid sienna;
+    overflow: auto;
+    background-color: rgba(245, 245, 220, .85);
+}
+img {
+    border: 3px solid crimson;
+        }
