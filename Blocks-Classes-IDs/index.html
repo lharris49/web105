@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocks, Classes, and IDs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Blocks, Inlines, and IDs</h1>
+    <div class="container" id="bigbox">
+        <div class="container">
+            <h2 class="banner">Block Quotes</h2>
+            <h3><img id="images" src="saad2.jpg">I enjoy using quotes in a variety of things, so I decided to use
+                the "block quote" block and include a relevent quote from a web designer. Also, I'm throwing in the
+                <span id="inlines">"SPAN"</span> inline function here.</h3>
+            <blockquote style="font-size: larger" cite="https://www.goodreads.com/quotes/tag/web-design">
+                “Web design is not just about creating pretty layouts. It’s about understanding the marketing challenge
+                behind
+                your
+                business.”
+                ― Mohamed Saad
+            </blockquote>
+        </div>
+        <div class="container">
+            <h2 class="banner">Video</h2>
+            <h3>When I was peer-reviewing one of my classmates websites, he had inserted videos.
+                I thought that was cool, so I decided to try that block element here. Oh and <abbr title="by the way"
+                    id="inlines">btw</abbr>, I'm tossing in the 'abbreviation' inline element
+                here</h3>
+            <section class="video">
+                <video width="720" height="540" controls>
+                    <source src="IJF.mp4" type="video/mp4">
+                </video>
+            </section>
+        </div>
+        <div class="container">
+            <h2 class="banner">The 'Pre' Block</h2>
+            <h3>The 'pre' block helps preserve the line style. Here I used it for a haiku to ensure
+                the line spacing was maintained. Also, using the 'b' element is a simple way to add
+                <b id="inlines">bold text</b> to your page.</h3>
+            <pre style="font-size: larger;"><img id="images" src="frog.jpg">
+        A huge frog and I
+        staring at each other,
+        neither of us moves.
+    </pre>
+            <h3>And here I'm adding the <span id="inlines">'text area'</span> inline function so you
+                can create your own haiku.</h3>
+            <label for="Your Haiku"></label><textarea id="Your Haiku" rows="3" cols="30"></textarea>
+            <details>
+                <summary>Haiku Defined</summary>
+                <p>A haiku is a Japanese poem of seventeen syllables, in three lines of five, seven,
+                    and five, traditionally evoking images of the natural world.</p>
+            </details>
+        </div>
+        <div class="container">
+            <h2 class="banner">The 'Nav' Block</h2>
+            <h3>The nav element creates a set of navigation links. Below I used it for social media sites,
+                and I put it with the footer because I thought it looked better. Also, here's an example
+                of the <sub id="inlines">subscript</sub> inline element. Good for writing out something like
+                vitamin B<sub>12</sub>.</h3>
+            <section>
+                <figure style="text-align: center;">
+                    <img src="tree-ice.jpg" alt="Ice on Tree" style="width: 500px">
+                    <figcaption>Example of figcaption element</figcaption>
+                </figure>
+            </section>
+        </div>
+        <div class="container">
+            <h2 class="banner">Footer</h2>
+            <h3>The footer is a block element that goes at the bottom of a page or section. I decided
+                to us it to put copywrite info on my page (see below).</h3>
+
+            <label for="hours">Hours to Design:</label>
+            <meter id="Hours" value="0.5">50%</meter><br>
+            <label for="frustration">Frustration Level:</label>
+            <meter id="frustration" value="0.9">90%</meter>
+            <p>The above meter block based on a scale of 1 to 10.</p>
+        </div>
+    </div>
+    <nav>
+        <a href="https://www.facebook.com/">Facebook</a> |
+        <a href="https://www.twitter.com/">Twitter</a> |
+        <a href="https://www.instagram.com/">Instagram</a> |
+    </nav>
+    <footer>&copy Lenny Harris, 2020</footer>
+</body>
+
+</html>
