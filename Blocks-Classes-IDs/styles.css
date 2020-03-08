@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: blanchedalmond;
+}
+.container{
+    background: darkslategray;
+    color: blanchedalmond;
+    border: 5px solid whitesmoke;
+    width: 80%;
+    border-radius: 25px;
+    padding: 15px;
+    margin: 15px auto;
+}
+#video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner {
+    color: gold;
+    background: rgba(0,0,0,.5);
+    padding: 5px;
+    }
+h1,
+h2{
+    text-align: center;
+}
+#bigbox {
+    background: rgba(95, 84, 71,.5);
+    border: 5px solid darkorange;
+}
+.inlines {
+    color: darkorange;
+    font-size: 125%;
+}
+.images {
+    float: right;
+    max-width: 25%;
+    max-height: 25%;
+    margin: 10px;
+    border: 2px solid darkorange;
+   }
+#redtext{
+    color: red;
+    text-shadow: -2px 0 white, 0 2px white, -2px 0 white, 0 2px white;
+    font-weight: bold;
+    font-size: 50px;
+}
