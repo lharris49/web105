@@ -1,0 +1,206 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Variables */
+:root{
+    --dark-pri-color: #689f38;
+    --light-pri-color: #dcedc8;
+    --pri-color: #8bc34a;
+    --text-color: #212121;
+    --accent-color: #ffc107;
+    --sec-text-color: #757575;
+    --divider-color: #bdbdbd;
+    --text-font: Arial, Helvetica, sans-serif;
+    --heading-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+/* Layout */
+body{
+    font-family: var(--text-font);
+    background: var(--light-pri-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+    margin-left: 130px;
+    margin-right: 100px;
+    }
+footer, main, aside, article, div, header{
+    clear: both;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    padding: 20px;
+}
+nav{
+    text-align: center;
+    line-height: 3;
+}
+
+main{
+    padding: 20px;
+}
+.container{
+    background: var(--dark-pri-color);
+    color: var(--sec-text-color);
+    width: 100%;
+    height: 150px;
+    max-width: 1200px;
+    margin: 10px auto;
+    border: 3px solid var(--accent-color);
+    overflow: auto;
+}
+.left{
+    float: left;
+    padding: 20px;
+}
+.right{
+    float: right;
+    padding: 20px;
+}
+.center{
+    display: block;
+    margin: 10px auto;
+}
+.button{
+    text-decoration: none;
+    background: var(--light-pri-color);
+    border: 3px solid var(--accent-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+.button:visited{
+    color: crimson;
+}
+.button:hover{
+    background: var(--sec-text-color);
+    color: var(--text-color);
+    border: 3px solid var(--accent-color);
+}
+footer{
+    text-align: left;
+    color: var(--sec-text-color)
+}
+img{
+    border: 2px solid var(--accent-color);
+    margin: 25px;
+}
+aside{
+    width: 20%;
+    border: 3px solid var(--accent-color);
+    background: var(--dark-pri-color);
+    color: var(--light-pri-color);
+    overflow: auto;
+    padding: 10px;
+    margin: 40px;
+}
+article{
+    width: 80% auto;
+    border: 3px solid var(--accent-color);
+    background: var(--dark-pri-color);
+    color: var(--light-pri-color);
+    overflow: auto;
+    padding: 10px;
+    margin: 30px;
+}
+.horizontal-menu{
+    margin-left: 20px;
+    margin-right: 20px;
+    float: right;
+}
+.horizontal-menu a{
+    text-decoration: none;
+}
+.top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: var(--divider-color);
+    color: var(--text-color);
+}
+h1, h2{
+    text-align: center;
+    margin: 20px;
+}
+h1{
+    color: var(--sec-text-color);
+    font-size: 40px;
+}
+h2{
+    color: var(--divider-color);
+    font-size: 30px;
+}
+h3{
+    color: var(--text-color);
+    font-size: 20px;
+    padding: 10px;
+}
+p{
+    line-height: 1.2;
+}
+div{
+    text-align: center;
+}
+p{
+    padding: 10px;
+}
+dt{
+    font-size: 23px;
+    color: var(--dark-pri-color);
+    font-weight: bold;
+}
+dd{
+    font-size: 17px;
+    padding: 10px;
+    line-height: 1.2;
+}
