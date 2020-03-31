@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Advanced CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <article id="combinators">
+            <h2>Combinators</h2>
+            <p>Combinators are special, combined CSS tags that help
+                you to specify exactly the element that you want to
+                target for your styles.
+            </p>
+            <hr>
+            <div id="descendant">
+                <h3>Descendant</h3>
+                <p class="directions">Using CSS in your external
+                    style sheet, change the h4 and h5 elements inside of
+                    the div with the id "descendant" to be red and bold.
+                </p>
+                <h4>H4</h4>
+                <H5>H5</H5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="child">
+                <h3>Child</h3>
+                <p class="directions">
+                    In your external CSS, make the h5 child of the id "child" white with an orange background.
+                </p>
+
+                <h4>H4</h4>
+                <H5>H5</H5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="sibling">
+                <h3>Sibling</h3>
+                <p class="directions">
+                    In your external CSS, in the "sibling" div, make the h4 sibling of h3 green and italic.
+                </p>
+                <h4>H4</h4>
+                <H5>H5</H5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </article>
+        <article id="pseudo-class">
+            <h2>Pseudo-class</h2>
+            <hr>
+            <p class="directions">
+                Style the links below by adding a class of "buttons" and using the normal, hover, and visited states.
+            </p>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Zelda!</a></li>
+            </ul>
+        </article>
+        <article id="pseudo-element">
+            <h2>Pseudo-element</h2>
+            <hr>
+            <h3>First Character and First Line</h3>
+            <p class="directions">
+                Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived
+                in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged
+                in a great civil war, testing whether that nation, or any nation so conceived and dedicated,
+                can long endure. We are met on a great battle-field of that war. We have come to dedicate a
+                portion of that field, as a final resting place for those who here gave their lives that that
+                nation might live. It is altogether fitting and proper that we should do this. But, in a larger
+                sense, we can not dedicate — we can not consecrate — we can not hallow — this ground. The brave
+                men, living and dead, who struggled here, have consecrated it, far above our poor power to add
+                or detract. The world will little note, nor long remember what we say here, but it can never
+                forget what they did here. It is for us the living, rather, to be dedicated here to the unfinished
+                work which they who fought here have thus far so nobly advanced. It is rather for us to be here
+                dedicated to the great task remaining before us — that from these honored dead we take increased
+                devotion to that cause for which they gave the last full measure of devotion — that we here
+                highly resolve that these dead shall not have died in vain — that this nation, under God, shall
+                have a new birth of freedom — and that government of the people, by the people, for the people,
+                shall not perish from the earth.
+            </p>
+        </article>
+        <article id="beforeafter">
+            <h3>before and after</h3>
+            <p class="directions">Add an ID to this paragraph then use before and after
+                elements to add text that says "before" and "after"
+            </p>
+        </article>
+        <article id="opacity">
+            <h2>Opacity</h2>
+            <hr>
+            <p>
+                <directions>Using a descendant selector, set all the images
+                    in the "opacity" article to .5, then have them change to
+                    full opacity on mouse over.
+                </directions>
+            </p>
+            <img src="http://placekitten.com/g/200/200" alt="kitten">
+            <img src="http://placekitten.com/g/200/200" alt="kitten">
+            <img src="http://placekitten.com/g/200/200" alt="kitten">
+        </article>
+        <article id="navigation">
+            <h2>Navigation Bar</h2>
+            <hr>
+            <p class="directions">Convert the list below to
+                either a horizontal or vertical navigation bar.
+                Color choices are up to you.
+            </p>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+        </article>
+        <h2>Image Gallery</h2>
+        <hr>
+        <p class="directions">Create a Responsive CSS image Gallery from
+            the images below
+        </p>
+        <div class="responsive">
+            <div id="gallery">
+                <a target="_blank" href="https://placedog.net/200"><img src="https://placedog.net/200" alt="dog"></a>
+                <div class="desc">Cute Doggos</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div id="gallery">
+                <a target="_blank" href="https://placedog.net/200"><img src="https://placedog.net/200" alt="dog"></a>
+                <div class="desc">Cute Doggos</div>
+            </div>
+        </div>
+        <div class="responsive">
+            <div id="gallery">
+                <a target="_blank" href="https://placedog.net/200"><img src="https://placedog.net/200" alt="dog"></a>
+                <div class="desc">Cute Doggos</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
