@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2|Mukta|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Forms</title>
+    <style>
+        body {
+            background-image: url('camo-bkg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Forms</h1>
+    <div class="container">
+        <form action="/action_page,php">
+            <h1>Assistance Support Request Form</h1>
+            <br>
+            <label for="fname">First Name*</label>
+            <input type="text" id="fname" name="fname" value="John" required>
+            <label for="lname">Last Name*</label>
+            <input type="text" id="lname" name="lname" value="Smith" required><br>
+            <br>
+            <h2>Branch of Service (select one)</h2>
+            <input type="radio" id="Army" name="branch" value="Army">
+            <label for="Army">Army</label>
+            <input type="radio" id="Navy" name="branch" value="Navy">
+            <label for="Navy">Navy</label>
+            <input type="radio" id="Marines" name="branch" value="Marines">
+            <label for="Marines">Marines</label>
+            <input type="radio" id="Air Force" name="branch" value="Air Force">
+            <label for="Air Force">Air Force</label>
+            <input type="radio" id="Guard/Reserve" name="branch" value="Guard/Reserve">
+            <label for="Guard/Reserve">Guard/Reserve</label>
+            <input type="radio" id="Family Member" name="branch" value="Family Member">
+            <label for="Family Member">Family Member</label>
+            <br>
+            <h2>Discharge Disposition</h2>
+            <select name="discharge" id="discharge">
+                <option value="select one">(Select One)</option>
+                <option value="Honorable">Honorable</option>
+                <option value="General">General, Under Honorable Conditions</option>
+                <option value="other than">Other than Honorable</option>
+                <option value="dishonorable">Dishonorable</option>
+            </select>
+            <br>
+            <h2>Nature of Request (select all that apply)</h2>
+            <input type="checkbox" id="request1" name="request1" value="housing">
+            <label for="request1">Housing</label>
+            <input type="checkbox" id="request2" name="request2" value="employment">
+            <label for="request2">Employment</label>
+            <input type="checkbox" id="request3" name="request3" value="education">
+            <label for="request3">Education</label>
+            <input type="checkbox" id="request4" name="request4" value="financial">
+            <label for="request4">Financial Assistance</label>
+            <input type="checkbox" id="request5" name="request5" value="benefits">
+            <label for="request5">VA Benefits</label><br>
+            <input type="checkbox" id="request6" name="request6" value="health">
+            <label for="request6">Healthcare</label>
+            <input type="checkbox" id="request7" name="request7" value="household">
+            <label for="request7">Household Goods/Clothing</label>
+            <input type="checkbox" id="request8" name="request8" value="Food Assistance">
+            <label for="request8">Food Assistance</label>
+            <input type="checkbox" id="request9" name="request9" value="other">
+            <label for="request9">Other</label>
+            <br>
+            <h2>Please provide a detailed description of your assistance request below:</h2>
+            <textarea name="description" id="description" cols="100" rows="10" placeholder="(type here)"></textarea>
+            <br>
+            <hr>
+            <h2>Contact Information</h2>
+            <label for="phone">Enter a phone number*: &ensp;</label>
+            <input type="tel" id="phone" name="phone" placeholder="555-678-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required>
+            <br>
+            <label for="email">Enter your email: &ensp;</label>
+            <input type="email" id="email" name="email" placeholder="joesmith@example.com">
+            <br>
+            <h3 style="text-align: left">* Required Entries</h3>
+            <input type="submit" value="submit">
+            &nbsp;
+        </form>
+    </div>
+
+</body>
+<footer style="text-align: left;">
+    <p>&copy; Lenny Harris, 2020</p>
+    <p>All Rights Reserved</p>
+</footer>
+
+</html>
