@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2|Mukta|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Media</title>
+
+</head>
+
+<body>
+    <h1>HTML Media</h1>
+    <div class="container">
+        <h2>Sounds</h2>
+        <h3 style="text-align: left">Title: Bad Dad Jokes</h3>
+        <audio id="audio" controls>
+            <source src="dadjokes.ogg" type="audio/ogg">
+            <source src="dadjokes.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <h2>Local Video</h2>
+        <h3 style="text-align: left;">Title: Thompson Center Performance</h3>
+        <video id="video" controls>
+            <source src="thompson.mp4" type="video/mp4">
+            <source src="thompson.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <h2>YouTube Embedded Video</h2>
+        <h3 style="text-align: left;">Title: Billy Joel at Vanderbilt University</h3>
+        <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/htZnpnoHGgY" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+    </div>
+</body>
+<footer>
+    <p>&copy; Lenny Harris, 2020</p>
+    <p>All Rights Reserved</p>
+</footer>
+
+</html>
