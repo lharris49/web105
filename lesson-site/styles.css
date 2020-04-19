@@ -1,0 +1,307 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Variables */
+:root{
+    --dark-primary-color: #002171;
+    --light-primary-color: #5472d3;
+    --primary-color: #0d47a1;
+    --text-icons: #000000;
+    --accent-color: #dcdcdc;
+    --primary-text: #000000;
+    --secondary-text: #ffffff;
+    --divider-color: #8c8c8c;
+
+font-family: 'Baloo 2', cursive;
+font-family: 'Rubik', sans-serif;
+font-family: 'Mukta', sans-serif;
+
+    --text-font: 'Baloo 2', cursive;
+    --sec-text-font: 'Rubik', sans-serif;
+    --heading-font: 'Mukta', sans-serif;
+}
+
+/* Layout */
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--text-font);
+    background: rgb(15,141,222);
+    background: linear-gradient(90deg, rgba(15,141,222,1) 0%, rgba(244,245,243,1) 50%, rgba(15,141,222,1) 100%);
+    color: var(--secondary-text);
+    box-sizing: border-box;
+}
+
+footer, main, aside, article, div, header{
+    clear: both;
+    box-sizing: border-box;
+}
+header{
+    background: var(--dark-primary-color);
+    color: var(--secondary-text);
+    margin: 10px auto;
+    margin-bottom: -10px;
+    overflow: auto;
+    width: 75%;
+    padding: 20px;
+    min-height: 70px;
+}
+header h1{
+    font-size: 5em;
+}
+main{
+    padding: 20px;
+}
+.container{
+    background: var(--accent-color);
+    color: var(--item-color);
+    width: 77%;
+    margin: auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.center{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+}
+nav{
+    background-color: var(--light-primary-color); 
+    color: var(--secondary-text);
+    border-top: 3px solid var(--accent-color);
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 3;
+    padding-left: 20px;
+    margin: 0 -20px -20px;
+    overflow: hidden;
+}
+nav li{
+    float: left;
+    display: inline;
+    padding: 10px;
+}
+nav a, button{
+    color: var(--secondary-text);
+    font-size: 1.3em;
+    padding: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+nav a:hover, .button:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-text);
+}
+nav .current a{
+    background-color: var(--primary-color);
+}
+footer{
+    text-align: left;
+    color: var(--sec-text-color)
+}
+img{
+    margin: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5)
+}
+aside{
+    float: right;
+    width: 33%;
+    background: var(--light-pri-color);
+    color: var(--text-color);
+    overflow: auto;
+    padding: 10px;
+    margin: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5)
+}
+aside img{
+    width: 75%;
+}
+article{
+    width: 80% auto;
+    border: 3px solid var(--divider-color);
+    background: var(--light-pri-color);
+    color: var(--text-color);
+    overflow: auto;
+    padding: 10px;
+    margin: 30px;
+}
+.horizontal-menu{
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+    list-style: none;
+}
+.horizontal-menu a{
+    text-decoration: none;
+}
+.top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: var(--light-pri-color);
+    color: var(--dark-pri-color);
+}
+h1, h2{
+    margin: 20px;
+}
+h1{
+    color: var(--sec-text-color);
+    font-size: 40px;
+    font-family: var(--heading-font);
+    text-align: center;
+}
+h2{
+    color: var(--primary-color);
+    font-size: 30px;
+    font-family: var(--text-font);
+    line-height: 1.2em;
+}
+h3{
+    color: var(--primary-text);
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 20px;
+    text-align: left;
+}
+p{
+    line-height: 1.2;
+    padding: 15px;
+    text-align: left;
+}
+div{
+    text-align: center;
+}
+li{
+    color: var(--primary-text);
+    text-align: left;
+    font-size: 20px;
+    margin-left: 50px;
+    line-height: 1.12em;
+    }
+.image33{
+    width: 33%;
+}
+.image25{
+    width: 25%;
+}
+.image50{
+    width: 50%;
+}
+
+hr{
+    background-color: var(--dark-primary-color);
+    height: 2px;
+}
+#iframe{
+    display: block;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    width: 33%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 800px){
+    header, .container {
+        float: none;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    header{
+        font-size: 10px;
+    }
+   
+@media screen and (max-width: 411px){
+    header, .container{
+        margin: 0;
+        padding: 0;
+        float: none;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    aside{
+        margin: 0;
+        padding: 0;
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    header {
+        font-size: 4.5px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3, p{
+        font-size: 15px;
+    }
+    li{
+        margin: 0 0 20px 0;
+        padding: 0 10px 0 10px;
+        font-size: 10px;
+    }
+    #img-hide{
+        display: none;
+    }
+    #iframe{
+        float: none;
+        display: block;
+        width: 100%;
+    }
